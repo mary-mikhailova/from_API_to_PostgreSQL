@@ -9,7 +9,7 @@
 
 ### 1. Организация логирования
 File Handler хранит только 3 архвных файла - остальные будем удалять. Примерный вид логов:
-<img width="1364" height="303" alt="image" src="https://github.com/user-attachments/assets/6d70cfa7-f6e9-446e-85ab-099b1311b16e" />
+<img width="637" height="312" alt="image" src="https://github.com/user-attachments/assets/813f56cd-a083-4bd0-897d-2a794b432853" />
 
 ### 2. Выргрузка данных
 Учитаваем часовой пояс - 3 часа, выгружаем данные по API с помощью функции `get_api_data(api_url, params)`
@@ -71,10 +71,11 @@ query = """
 ### 6. Загружаем результат анализа в Гугл таблицу 
 - Используем функцию `upload_to_google_sheets(results, spreadsheet_name, worksheet_name)`
 - Получим:
-<img width="464" height="102" alt="image" src="https://github.com/user-attachments/assets/b311f1cd-cd89-461e-99eb-468a6c61ce05" />
+<img width="468" height="83" alt="image" src="https://github.com/user-attachments/assets/e3bfc04a-ff89-4eb1-a26b-4dd9a6ce7480" />
 
 ### 7. Отправим email о готовности отчета коллегам 
 - Используем функцию `send_mail()`
 - Для безопасности пароль от почтового ящика будем получать из переменной окружения `password = os.getenv("send_email_for_python_project")`
 - Пример письма:
-<img width="784" height="233" alt="image" src="https://github.com/user-attachments/assets/ac435a59-76f3-405a-9605-2636f9f3a6f1" />
+<img width="773" height="224" alt="image" src="https://github.com/user-attachments/assets/2afbd717-826e-45d4-b2cf-029ad164bd06" />
+
